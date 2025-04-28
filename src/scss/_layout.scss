@@ -1,0 +1,31 @@
+    
+    @media only screen and (min-width: 1200px) {
+    
+   
+    
+        .menu-btn {
+       display: none;
+        }
+   
+        #open-menu {
+       display: none !important;
+       }
+   
+        header {
+       position: static;
+       }
+   
+       nav {
+       display: block !important;
+       position: static;
+        height: auto;
+   width: auto;
+    }
+   
+     
+      nav li {
+    display: inline;
+    
+        }
+   
+      }
