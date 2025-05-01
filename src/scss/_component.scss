@@ -3,3 +3,13 @@ $backGround_Color: #E9EFEC;
 $white: #ffffff;
 
 $darkGreen_light: lighten($darkGreen, 25%);
+$backGround_Color_dark: darken($backGround_Color, 10%);
+
+@mixin layout($gridRow) {
+    grid-row: $gridRow;
+    grid-column: 1/-1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    background-color: $backGround_Color_dark;
+}

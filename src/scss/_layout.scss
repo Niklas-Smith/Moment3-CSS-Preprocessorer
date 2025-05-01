@@ -1,8 +1,62 @@
-    
+@use "component";
+
+
+
+.container-1 {
+  display: grid;
+grid-template-columns: repeat(16, 1fr);
+grid-template-rows:  1fr;
+
+
+
+.index-box1 {
+   grid-row: 1/2;
+   grid-column: 1/-1;
+
    
+ }
+.index-box2  {
+  @include  component.layout($gridRow: 2/3);
+}
+
+.index-box3 {
+
+  @include  component.layout($gridRow: 3/4);
+}
+  
+.index-box4 {
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  background-color: component.$darkGreen;
+  color: component.$white;
+  margin-top: 2em;
+  
+  }
    
-   
-   
+.sass-box1{
+  grid-row: 1/2;
+  grid-column: 1/-1;
+
+}
+
+.sass-box2{
+  @include  component.layout($gridRow: 2/3);
+  
+}
+.sass-box3{
+  @include  component.layout($gridRow: 3/4);
+  
+}
+.sass-box4{
+  grid-row: 4/5;
+  grid-column: 1/-1;
+  background-color: component.$darkGreen;
+  color: component.$white;
+  margin-top: 2em;
+  }
+
+
+}
    
    
    
