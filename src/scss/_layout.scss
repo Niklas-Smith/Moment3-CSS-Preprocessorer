@@ -17,11 +17,16 @@ grid-template-rows:  1fr;
  }
 .index-box2  {
   @include  component.layout($gridRow: 2/3);
+  background-color: component.$backGround_Color_dark;
+
+
 }
 
 .index-box3 {
 
   @include  component.layout($gridRow: 3/4);
+  background-color: component.$backGround_Color_dark;
+ 
 }
   
 .index-box4 {
@@ -41,10 +46,14 @@ grid-template-rows:  1fr;
 
 .sass-box2{
   @include  component.layout($gridRow: 2/3);
+  background-color: component.$backGround_Color_dark;
+ 
   
 }
 .sass-box3{
   @include  component.layout($gridRow: 3/4);
+  background-color: component.$backGround_Color_dark;
+
   
 }
 .sass-box4{
@@ -73,8 +82,17 @@ grid-template-rows:  1fr;
    
    @media only screen and (min-width: 1200px) {
     
-   
-    
+  
+    .beach {
+
+      
+   max-width: 600px;
+    }
+
+    .mountain{
+
+      max-width: 600px;
+   }
         .menu-btn {
        display: none;
         }
@@ -101,3 +119,18 @@ grid-template-rows:  1fr;
         }
    
       }
+
+
+      @media (prefers-color-scheme: dark) {
+    body {
+    color: rgba(95, 89, 89, 0.945);
+    background-color: component.$backGround_Color_dark70;
+
+    }
+
+.index-box3 {
+
+  background-color: red ;
+}
+
+  }

@@ -5,6 +5,7 @@
    margin: 0;
    padding: 0;
   font-family: 'Times New Roman', Times, serif;
+  line-height: 1.4em;
 }
 
 body {
@@ -26,11 +27,26 @@ height: 7em;
 
     h1{
   color: component.$white;
-margin-left: 0.5em
+margin-left: 1em;
     }
     
+   h2{
+margin-top: 1em;
 
+   }
     
+h3 {
+margin-top: 0.8em;
+
+}
+p{
+   margin-top: 0.5em;
+}
+
+ul li{
+
+   margin-top: 0.3em;
+}
     nav {
       background-color: component.$darkGreen;
 font-size: 1.1em;
@@ -129,7 +145,7 @@ font-size: 1.1em;
     
     
 .beach {
-   max-width: 600px;
+   max-width: 400px;
    width: 100%;
    border-radius: 50%;
    border: 5px  solid component.$darkGreen_light;
